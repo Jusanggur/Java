@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+   <children>
+      <TextArea prefHeight="200.0" prefWidth="200.0" text="O aplicativo está na versão 1.0, para reportar bugs ou &#10;falhas do sistema contatar o autor do aplicativo.&#10;&#10;Todos os direitos reservados.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Users/tahum/Documents/Lightshot/Screenshot_20.png" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>
