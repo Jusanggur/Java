@@ -1,0 +1,27 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+
+public class AtividadeVIII {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe os numeros abaixo");
+		double a;
+		int s = 0;
+		int i = 0;
+		
+		while(i<20) {
+			try(Scanner ler = new Scanner(System.in)){
+				
+				a = ler.nextDouble();
+	
+			}
+			if (a > 100) { 
+				s++;
+			}
+			
+		}
+		System.out.println("O total de numeros maiores que 100 foi de:"+ s);
+	}
+}

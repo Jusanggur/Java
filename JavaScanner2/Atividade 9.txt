@@ -1,0 +1,21 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeIX {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe dois valores abaixo");
+		double a, b, c;
+		try (Scanner ler = new Scanner(System.in)){
+			a = ler.nextDouble();
+			b = ler.nextDouble();
+			
+		}
+		c = Math.pow(a, b);
+		
+		System.out.println("O valor calculador foi de:" + c);
+	}
+	
+	}
+

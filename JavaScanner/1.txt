@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Atividade {
+	public static void main(String[] args) {
+		System.out.println("Digite 4 valores inteiros abaixo");
+			
+		int a, b, c, d = 0;
+		try (Scanner ler = new Scanner(System.in)) {
+			a = ler.nextInt();
+			b = ler.nextInt();
+			c = ler.nextInt();
+			d = ler.nextInt();
+		}
+		int R = ( (a + b + c) * d);
+		
+		System.out.println("Resultado da expressao:" + R);
+		
+	}
+}

@@ -1,0 +1,25 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeV {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe os minutos que ficou no estacionamento");
+		int a;
+		try(Scanner ler = new Scanner(System.in)){
+			
+			a = ler.nextInt();
+			
+		}
+		if (a <= 15) {
+			System.out.println("Gratis");
+		}
+		if (a <= 60 && a > 15 ) {
+			System.out.println("Pague 1 real");
+		}
+		if (a > 60) {
+			System.out.println("Pague 2 reais");
+		}
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class AtividadeIV {
+	public static void main(String[] args) {
+		System.out.println("Digite seu Peso e Altura abaixo");
+		
+		float p, a = 0;
+		try (Scanner ler = new Scanner(System.in)) {
+			p = ler.nextInt();
+			a = ler.nextInt();
+		}				
+		float p1 = (p * p);
+		float IMC = a / p1;
+		
+		System.out.println("O IMC e de:" + IMC);
+	}
+}

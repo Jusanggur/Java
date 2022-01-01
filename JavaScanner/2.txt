@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class AtividadeII {
+	public static void main(String[] args) {
+		System.out.println("Digite as 4 notas abaixo");
+		
+		int a, b, c, d = 0;
+		try (Scanner ler = new Scanner(System.in)) {
+			a = ler.nextInt();
+			b = ler.nextInt();
+			c = ler.nextInt();
+			d = ler.nextInt();
+		}
+		int M = (a + b + c + d)/4;
+		
+		System.out.println("Media final:" + M);
+		
+	}
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class AtividadeXIV {
+	public static void main(String[] args) {
+		
+		System.out.println("Insira um numero abaixo");
+		int a, b, primo = 0;
+		
+		Scanner ler = new Scanner(System.in);
+			a = ler.nextInt();
+			b = ler.nextInt();
+		for ( int i = a; i <= b; i++) {
+			for( int j = 1; j <= i; j++) {
+				if( i % j == 0) {
+					primo ++;
+				}
+			}
+			if (primo == 2) {
+				System.out.println("O numero" + i + "e primo");
+			}
+			else {
+				System.out.println("Nao e primo");
+			}
+				primo = 0;
+			}
+		}
+	}

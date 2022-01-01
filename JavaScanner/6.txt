@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class AtividadeVI {
+ public static void main(String[] args) {
+	System.out.println("Digite o raio da circunferencia");
+	
+	float r = 0;
+	float R, A, C = 0;
+	float P = (float) 3.14;	
+	try (Scanner ler = new Scanner(System.in)){
+		r = ler.nextInt();
+	}
+		R = r * r;
+		A = R * P;
+		C = 2 * P * R;
+		
+		System.out.println("Area da circunferencia:" + A);
+		System.out.println("Comprimento da Circunferencia:" + C);
+		
+}
+}

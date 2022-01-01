@@ -1,0 +1,23 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class Atividade {
+	public static void main(String[] args) {
+		
+		System.out.println("Informa dois valores abaixo");
+		double a, b = 0;
+		try (Scanner ler = new Scanner(System.in)){
+			
+			a = ler.nextDouble();
+			b = ler.nextDouble();
+			
+		}
+		if (a < b ) {
+			System.out.println("ACERTOU");
+		}
+		else {
+			System.out.println("ERROU");
+		}
+	}
+}

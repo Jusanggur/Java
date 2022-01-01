@@ -1,0 +1,18 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeIV {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe o numero abaixo");
+		int a;
+		try (Scanner ler = new Scanner(System.in)){
+			
+			a = ler.nextInt();
+		}
+		if (a > 0) {
+			System.out.println("MUITO BEM");
+		}
+	}
+}

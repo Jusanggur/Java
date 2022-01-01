@@ -1,0 +1,25 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeIII {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe o numero abaixo");
+		int a;
+		try (Scanner ler = new Scanner (System.in)){
+			
+			a = ler.nextInt();
+		}
+		if ( a >= 10 ) {
+		
+		if ( a <=100 ) {
+			System.out.println("No intervalo");
+		
+		}
+		}
+		else {
+			System.out.println("Fora do intervalo");
+		}
+	}
+}

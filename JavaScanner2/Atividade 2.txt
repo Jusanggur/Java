@@ -1,0 +1,24 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeII {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe as 3 notas abaixo");
+		double a, b, c, M = 0;
+		try (Scanner ler = new Scanner(System.in)){
+			
+			a = ler.nextDouble();
+			b = ler.nextDouble();
+			c = ler.nextDouble();
+		}
+		M = a + b + c / 3;
+	if ( M >= 6) {
+		System.out.println("Aluno aprovado");
+	}
+	else {
+		System.out.println("Aluno reprovado");
+	}
+}
+}

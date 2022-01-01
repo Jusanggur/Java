@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class AtividadeIII {
+	public static void main(String[] args) {
+		System.out.println("Digite o Comprimento e Largura abaixo");
+		
+		int b, h = 0;
+		try (Scanner ler = new Scanner(System.in)) {
+			b = ler.nextInt();
+			h = ler.nextInt();
+		}
+		int A = b * h;
+		int P = ((b + h)* 2);
+		
+		System.out.println("Area do Triangulo:" + A);
+		System.out.println("Perimetro do Triangulo:" + P);
+				
+	}
+
+}

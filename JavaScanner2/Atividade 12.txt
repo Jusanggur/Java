@@ -1,0 +1,27 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeXII {
+	public static void main(String[] args) {
+		
+		System.out.println("Insira os numeros abaixo");
+		try (Scanner ler = new Scanner(System.in)) {
+			int a = 0, p = 0, i = 0;
+			
+			int x = ler.nextInt();
+			while( x != 0) {
+				if( x % 2 == 0) {
+					p++;
+				}
+				else {
+					i++;
+				}
+				a++;
+				x = ler.nextInt();
+				
+			}
+			System.out.println("Numeros pares digitado" + p + "Numeros impares digitados" + i);
+		}
+	}
+}

@@ -1,0 +1,33 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeVI {
+	public static void main(String[] args) {
+		
+		System.out.println("Insira seu peso e altura abaixo");
+		float imc, p, a;
+		Scanner ler = new Scanner(System.in);
+			p = ler.nextFloat();
+			a = ler.nextFloat();
+			
+			imc = p/(a * a);
+				
+			if (imc < 17) {
+				System.out.println("Muito abaixo do Peso");
+				
+			}else if (imc <= 18.49) {
+				System.out.println("Abaixo do Peso");
+			}else if (imc <= 24.99) {
+				System.out.println("Peso Normal");
+			}else if (imc <= 29.99) {
+				System.out.println("Acima do Peso");
+			}else if (imc <= 34.99) {
+				System.out.println("Obesidade");
+			}else if (imc <= 39.99) {
+				System.out.println("Obesidade Severa");
+			}else {
+				System.out.println("Obesidade Morbida");
+			}
+		}
+}

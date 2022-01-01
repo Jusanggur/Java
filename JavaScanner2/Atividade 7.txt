@@ -1,0 +1,29 @@
+package SemanaII;
+
+import java.util.Scanner;
+
+public class AtividadeVII {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe os numeros de a, b e c, abaixo");
+		float a, b, c = 0;
+		Scanner ler = new Scanner(System.in);
+		
+			a = ler.nextFloat();
+			b = ler.nextFloat();
+			c = ler.nextFloat();
+			
+			double delta = (b * b)-4*a*c;
+			
+			if (delta < 0) {
+				System.out.println("Nao ha raiz real");
+			}else if (delta == 0) {
+				double x = -b/(2 * a);
+				System.out.println(x);
+			}else {
+				double x = (- b - (Math.sqrt(delta))) / (2*a);
+				double xx = (- b + (Math.sqrt(delta))) / (2*a);
+				System.out.printf("S = {%.2f, %.2f}\n", x, xx);
+			}
+	}
+}

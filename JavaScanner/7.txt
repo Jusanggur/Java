@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class AtividadeVII {
+	public static void main(String[] args) {
+		
+		System.out.println("Informe os pontos X e Y abaixo");
+		
+		int x1, x2, y1, y2, a = 0;
+		try (Scanner ler = new Scanner(System.in)){
+			x1 = ler.nextInt();
+			y1 = ler.nextInt();
+			x2 = ler.nextInt();
+			y2 = ler.nextInt();
+			a = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+		}
+		
+		System.out.println("A distancia entre os pontos e de:" + a);
+		}
+	
+}
