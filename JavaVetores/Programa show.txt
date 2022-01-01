@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int
+main ()
+{
+  srand (time (NULL));
+  int pessoas[1000];
+  int distancia_pessoas[1000];
+  int infectados_idade[31];
+  int infectados = 0;
+  int distancia = 0;
+  int a;
+  int b;
+
+  for (a = 0; a < 1000; ++a)
+    {
+      pessoas[a] = rand () % 31;
+      distancia_pessoas[a] = rand () % 5;
+      distancia_pessoas[a]++;
+    }
+
+  for (a = 0; a < 31; ++a)
+    {
+      infectados_idade[a] = 0;
+    }
+
+  for (a = 0; a < 1000; a++)
+    {
+      for (b = 0; b < 1000; b++)
+	{
+	  if (a != b)
+	    {
+	      distancia = distancia_pessoas[a] - distancia_pessoas[b];
+
+	      if (distancia <= 2)
+		{
+		  infectados++;
+		  infectados_idade[pessoas[a]]++;
+		  b = 1000;
+		}
+	    }
+	}
+    }
+
+  printf ("Numero total de infeccoes: %d\n", infectados);
+
+  for (a = 0; a < 31; ++a)
+    {
+      printf ("Infectados com %d anos: %d\n", a, infectados_idade[a]);
+    }
+  return 0;
+
+}

@@ -1,0 +1,33 @@
+int
+main ()
+{
+  float a, b, c, d;
+
+  scanf ("%f", &d);
+  scanf ("%f", &a);
+  scanf ("%f", &b);
+
+  
+  if (d = 1)
+    {
+      c = a + b;
+    }
+
+  if (d = 2)
+    {
+
+      c = a - b;
+    }
+
+  if (d = 3)
+    {
+      c = a * b;
+    }
+  if (d = 4)
+    {
+      c = a / b;
+    }
+
+  printf ("O valor da operacao foi = %.2f\n", c);
+  return 0;
+}
